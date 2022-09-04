@@ -1,0 +1,128 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #e6e7ec;
+}
+
+#box{
+    position: relative;
+    margin: 50px auto;
+    width: 450px;
+    height: 510px;
+    background: #e6e7ec;
+}
+
+#centent{
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border: 1px solid #9E9E9E;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px #9e9e9ed9;
+    left: 10px;
+    top: 20px;
+}
+
+#canvas{
+    display: block;
+    position: absolute;
+    background: #F7E6B7;
+    left: -10px;
+    top: -10px;
+}
+
+#button,#anew,#state,#winner{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 10px;
+    box-sizing: border-box;
+    color: #00BCD4;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #9e9e9e5e;
+    top: 460px;
+    left: 270px;
+    user-select: none;
+}
+#anew{left: 220px;}
+#state{left: 321px; width: 120px;}
+#state .state-chess,#winner .state-chess{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+}
+
+#state .chessName, #winner .chessName{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 5px;
+    left: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
+
+#button:hover{
+    transition: 1s all;
+    background: #01BCFF;
+    color: #fff;
+}
+#anew:hover{
+    transition: 1s all;
+    background: #1bb556;
+    color: #fff;
+}
+
+#button:active,#anew:active{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(.8);
+}
+
+
+.Bchess{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 30px;
+    background: radial-gradient(#9E9E9E -100%, #000000 100%);
+    box-shadow: 1px 1px 2px 0px #0000006e;
+    font-size: 10px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+}
+
+.Wchess{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 30px;
+    background: radial-gradient( #e4e4e4 10%,#b7aaaa);
+    box-shadow: 1px 1px 2px 0px #0000006e;
+    font-size: 10px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+#winner{
+    width: 120px;
+    left: 12px;
+    display: none;
+}
